@@ -13,6 +13,7 @@
                                       ouhk.comps380f.service" />
     <mvc:annotation-driven />
 
+    
     <bean id="multipartResolver"     
           class="org.springframework.web.multipart.support.StandardServletMultipartResolver"/>
 
@@ -21,5 +22,6 @@
         <property name="prefix" value="/WEB-INF/jsp/view/" />
         <property name="suffix" value=".jsp" />
     </bean>
+    <bean id="userValidator" class="ouhk.comps380f.validator.UserValidator" />
     
 </beans>
